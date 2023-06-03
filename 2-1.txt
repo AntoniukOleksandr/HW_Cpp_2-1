@@ -1,0 +1,46 @@
+задача 2
+
+Дано целое число. Если оно является положительным, то прибавить к нему 1; в противном случае вычесть из него 2. Вывести полученное число.
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   int a;
+   cout << "введіть значення a:";
+   cin >> a;
+   if (a>0)
+      a++;
+   else
+      a=a-2;
+   cout << a;
+   return 0;
+}
+
+задача 4
+
+Даны три целых числа. Найти количество положительных чисел в исходном наборе.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b, c; 
+    cout << "введіть значення чисел a, b, c: ";
+    cin >> a >> b >> c;
+
+    int count = 0;
+    if (a > 0) {
+        count++;
+    }
+    if (b > 0) {
+        count++;
+    }
+    if (c > 0) {
+        count++;
+    }
+   cout << "к-сть додатніх чисел: " << count << endl;
+
+    return 0;
+}
+    
